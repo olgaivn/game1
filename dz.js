@@ -122,7 +122,7 @@ $(function() {
     
     //Перемешиваем блоки при нажатии на кнопку "Начать заново"	
 	$('#newGame').on('click', function(){
-        newgame();
+        	newgame();
 	});
 
     //Передвигаем нажатый блок
@@ -132,13 +132,13 @@ $(function() {
         var col1 = Math.ceil((parseInt($(this).css('left'))+1) / blockSize);
         //Определяем координаты пустой блока
         $('.block').each(function(){	
-			if($(this).text()==''){
-                row = Math.ceil((parseInt($(this).css('top'))+1) / blockSize); 
-                col = Math.ceil((parseInt($(this).css('left'))+1) / blockSize);
-			};
-		});
+		if($(this).text()==''){
+			row = Math.ceil((parseInt($(this).css('top'))+1) / blockSize); 
+			col = Math.ceil((parseInt($(this).css('left'))+1) / blockSize);
+		};
+	});
         //Определяем, в какую сторону можно переместить блок и перемещаем его 
-		if((col-col1==1) && (row-row1==0)){
+	if((col-col1==1) && (row-row1==0)){
             step('left'); 
         }else if((col1-col==1) && (row-row1==0)){
             step('right');
