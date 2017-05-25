@@ -1,0 +1,50 @@
+.block{
+	display: inline-block;
+	width: 60px;
+    height: 55px;
+    border: 2px solid #2E8B57;
+    margin: 2px;
+    position: absolute;
+	text-align: center;
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 48px;
+    color: #8B2252;
+    padding-top: 5px;
+    background-color: #32CD32;
+}
+
+.block:active { 
+  background: #EEE8AA;
+}
+
+#form{
+	position: center;
+}
+
+#field{
+	display: block;
+	position: relative;
+	width: 270px;
+    height: 270px;
+	
+    margin: 25px 0 0 0;
+    padding: 2px;
+	/*border: 3px solid #2E8B57;*/
+}
+body{
+	background-color: #FFFFF0;
+	
+}
+
+#newGame{
+	width:20%;
+	position: center;
+	font-size: 18pt;
+	position: center;
+	font: 18pt serif;
+	background-color: #F0FFFF; 
+}
+
+
+
